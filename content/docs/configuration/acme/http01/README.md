@@ -43,6 +43,7 @@ spec:
     solvers:
     - http01:
         ingress:
+          # different clusters have different classes, check using `kubectl get ingressclass` or leave unset to use default
           class: nginx
 ```
 
